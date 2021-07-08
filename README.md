@@ -10,6 +10,8 @@ Shopify doesn't make their entire GraphQL schema available publicly, rather it i
 
 # Configuration
 
+***Note:** The schema files add a lot of cruft to your workspace, so you'll likely want to exclude them from search. To do this, open the command pallete* (<kbd>⇧</kbd>+<kbd>⌘</kbd>+<kbd>P</kbd> or <kbd>F1</kbd>) *and select `Preferences: Open Workspace Settings`. Find the setting for `Search: Exclude`, and add the `schemas` folder to the list. For example, if the `schemas` folder is at the root of your workspace, the exclude pattern would be **`schemas/`***.
+
 The **GraphiQL Explorer extension** only needs the API schema, so the configuration file is very simple. Simply copy the `.graphqlconfig` and `schema.json` files to the root of your project directory, and update `schemaPath` to use the correct path:
 
 #### **`.graphqlconfig`**
