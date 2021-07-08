@@ -1,0 +1,14 @@
+{
+  "schema": "./schemas/schema@2021-07.graphql.json",
+  "extensions": {
+    "endpoints": {
+      "default": {
+        "url": "https://auroraplasmadesign.myshopify.com/admin/api/2021-07/graphql.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "X-Shopify-Access-Token": "shppa_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        }
+      }
+    }
+  }
+}

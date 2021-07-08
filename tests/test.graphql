@@ -1,0 +1,27 @@
+query {
+  customers (first: 5, reverse: true) {
+    edges {
+      node {
+        id
+        email
+        firstName
+        lastName
+      }
+    }
+  }
+}
+
+mutation($input: CustomerInput!) {
+  customerUpdate(input: $input) {
+    customer {
+      id
+      email
+      firstName
+      lastName
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
